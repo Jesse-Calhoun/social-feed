@@ -1,21 +1,12 @@
 import React from 'react';
+import Post from '../Post/Post';
 
 
 const PostList = (props) => {
-    return (
-            <form>
-                {props.newPosts.map((post, index) => {
-                    return (
-                        <div key={index} >
-                            <div>{post.name}</div>
-                            <div>{post.post}</div>
-                            <button>Like</button>
-                            <button>Dislike</button>
-                        </div>
-                    );
-                })}
-            </form>
-     );
+    let posts =  props.newPosts.map((post) => {
+        return <Post post={post}/>;
+    })
+    return <div id='post-list'>{posts}</div>;
 }
  
 export default PostList;

@@ -1,27 +1,17 @@
-// import React from 'react';
+import React, { useState } from 'react';
 
 
-// const Post = (props) => {
-//     return ( 
-//         <div >
-//             <table>
-//                 <tbody>
-//                 {props.newPosts.map((post, index) => {
-//                     return (
-//                     <tr>
-//                         <td>{post.name}</td>
-//                         <td>{post.post}</td>
-//                         <button>Like</button>
-//                         <button>Dislike</button>
-//                     </tr>
-//                     );
-//                 })}
-//                     <div>
-//                     </div>
-//                 </tbody>
-//             </table>
-//         </div>
-//      );
-// }
+const Post = (props) => {
+    return ( 
+        <div id='wrapped-post'>
+            <div>{props.post.name}</div>
+            <div>{props.post.message}</div>
+            <div id='toggle-buttons'>
+                <button>Like</button>
+                <button>Dislike</button>
+            </div>
+        </div>
+     );
+}
  
-// export default Post;
+export default Post;

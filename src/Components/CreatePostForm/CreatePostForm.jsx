@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 
 const CreatePostForm = (props) => {
     const [name, setName] = useState('')
-    const [post, setPost] = useState('')
+    const [message, setMessage] = useState('')
 
     function handleSubmit(event){
         event.preventDefault();
         let newPost = {
             name: name,
-            post: post
+            message: message
         };
         console.log(newPost)
         props.addNewPost(newPost)
@@ -22,7 +22,7 @@ const CreatePostForm = (props) => {
             </div>
             <div>
                 <label>Post</label>
-                <input type='text' value={post} onChange={(event) => setPost(event.target.value)}></input>
+                <input type='text' value={message} onChange={(event) => setMessage(event.target.value)}></input>
                 <button type='submit'>Create</button>
             </div>
         </form>
