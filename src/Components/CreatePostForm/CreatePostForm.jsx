@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './CreatePostForm.css'
 
 const CreatePostForm = (props) => {
     const [name, setName] = useState('')
@@ -23,7 +24,7 @@ const CreatePostForm = (props) => {
             <div>
                 <label>Post</label>
                 <input type='text' value={message} onChange={(event) => setMessage(event.target.value)}></input>
-                <button type='submit'>Create</button>
+                <button className='create-button' type='submit'>Create</button>
             </div>
         </form>
      );

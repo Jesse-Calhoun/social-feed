@@ -1,0 +1,8 @@
+.post-list {
+    margin: auto;
+    width: 50%;
+    border: 1px solid #707070;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 10px 5px 5px #707070;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CreatePostForm from './Components/CreatePostForm/CreatePostForm';
 import PostList from './Components/PostList/PostList'
+import './Apps.css'
 
 
 
@@ -16,8 +17,11 @@ function App() {
   }
   
   return (
-    <div className='body'>
-      <h3>SocialFeed</h3>
+    <div >
+      <header>
+        <h3>Social
+          <large className='text-muted'>Feed</large></h3>
+      </header>
       <CreatePostForm addNewPost={addNewPost}/>
       <PostList newPosts={posts}/>
     </div>

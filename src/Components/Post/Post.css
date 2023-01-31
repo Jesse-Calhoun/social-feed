@@ -1,0 +1,19 @@
+.like-button {
+    background-color: #39ff14;
+}
+
+.dislike-button {
+    background-color: #ff1439;
+}
+
+.slide-right{
+    /* padding-left: 450px; */
+    justify-self: right
+}
+ #wrapped-post {
+    border: 1px hidden #707070;
+    padding: 5px;
+ }
+ .flex-container{
+    display: grid;
+ }
