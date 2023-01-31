@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const CreatePostForm = (props) => {
     const [name, setName] = useState('')
@@ -9,7 +9,9 @@ const CreatePostForm = (props) => {
         let newPost = {
             name: name,
             post: post
-        }
+        };
+        console.log(newPost)
+        props.addNewPost(newPost)
     }
 
     return ( 

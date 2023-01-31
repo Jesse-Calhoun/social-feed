@@ -1,31 +1,27 @@
-import React from 'react';
+// import React from 'react';
 
 
-const Post = (props) => {
-    return ( 
-        <div >
-            <table>
-                <tbody>
-                {props.feedPosts.map((post) => {
-                    return (
-                    <tr>
-                        <div>
-                        <td>{post.name}</td>
-                        </div>
-                        <div>
-                        <td>{post.post}</td>
-                        </div>
-                    </tr>
-                    );
-                })}
-                </tbody>
-            </table>
-            <div>
-                <button>Like</button>
-                <button>Dislike</button>
-            </div>
-        </div>
-     );
-}
+// const Post = (props) => {
+//     return ( 
+//         <div >
+//             <table>
+//                 <tbody>
+//                 {props.newPosts.map((post, index) => {
+//                     return (
+//                     <tr>
+//                         <td>{post.name}</td>
+//                         <td>{post.post}</td>
+//                         <button>Like</button>
+//                         <button>Dislike</button>
+//                     </tr>
+//                     );
+//                 })}
+//                     <div>
+//                     </div>
+//                 </tbody>
+//             </table>
+//         </div>
+//      );
+// }
  
-export default Post;
+// export default Post;

@@ -1,17 +1,25 @@
 import React, { useState } from 'react';
 import CreatePostForm from './Components/CreatePostForm/CreatePostForm';
-import Post from './Components/Post/Post';
-
+import PostList from './Components/PostList/PostList'
 
 
 
 function App() {
+  
   const [posts, setPosts] = useState([{name: 'Jesse Calhoun', post: 'My daughter is learning to hold a pen and write letters and numbers.'}])
+  
+  function addNewPost(post){
+    
+    let tempPosts = [...posts, post];
+    
+    setPosts(tempPosts)
+  }
+  
   return (
     <div >
       <h3>SocialFeed</h3>
-      <CreatePostForm/>
-      <Post feedPosts={posts}/>
+      <CreatePostForm addNewPost={addNewPost}/>
+      <PostList newPosts={posts}/>
     </div>
   );
 }
