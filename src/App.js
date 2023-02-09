@@ -12,7 +12,7 @@ function App() {
   
   function addNewPost(post){
     
-    let tempPosts = [...posts, post];
+    let tempPosts = [post, ...posts];
     
     setPosts(tempPosts)
   }
