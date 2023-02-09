@@ -7,11 +7,13 @@ const Post = (props) => {
     const [isDisliked, setDislikedPost] = useState(false);
 
     function handleLike(){
-        setLikedPost(!isLiked)
+        setLikedPost(!isLiked);
+        setDislikedPost(false)
     }
 
     function handleDislike(){
-        setDislikedPost(!isDisliked)
+        setDislikedPost(!isDisliked);
+        setLikedPost(false)
     }
     return ( 
         <div className='flex-container' id='wrapped-post'>
